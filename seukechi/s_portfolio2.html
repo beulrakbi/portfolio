@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio2</title>
+    <style>
+        /* 배경 검정색으로 설정 */
+        body {
+            background-color: black;
+        }
+
+        span,
+        p {
+            color: white;
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            position: absolute;
+        }
+
+        /* 가운데 라인 만들기 */
+        #line {
+            border-left: 1px solid #F8FFC2;
+            /* position: absolute; */
+            position: fixed;
+            left: 50%;
+            top: 10%;
+            bottom: 10%;
+        }
+
+        /* 원 모양 */
+        #one {
+            width: 30px;
+            height: 30px;
+            border: 1px solid white;
+            opacity: 0.3;
+            background-color: #F8FFC2;
+            border-radius: 50%;
+
+            /* 위치 조정 */
+            position: fixed;
+            top: 50%;
+            left: 27%
+        }
+
+        /* 파일 모양 이미지 밑에 내 소개*/
+        #bigbang {
+            position: fixed;
+            top: 58%;
+            font-size: 25px;
+            left: 15%;
+        }
+
+        /* about me */
+        #aboutme {
+            position: absolute;
+            top: 12%;
+            right: 30%;
+            font-size: 35px;
+            transform:translateX(50%);
+        }
+
+        /* next */
+        #nextText {
+            position: absolute;
+            bottom: 2px;
+            right: 6%;
+            font-size: 50px;
+        }
+
+        /* 하단 next 옆에 원 */
+        #nextone {
+            width: 100px;
+            height: 100px;
+            border: 1px solid white;
+            opacity: 0.3;
+            background-color: #F8FFC2;
+            border-radius: 50%;
+
+            /* 위치 조정 */
+            position: absolute;
+            bottom: 5%;
+            right: 3%;
+        }
+
+        /* 폴더 사진 크기 조정 */
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        /* 폴더 사진 */
+        #folder1 {
+            position: absolute;
+            top: 13%;
+            left: 33%;
+        }
+
+        #folder2 {
+            position: absolute;
+            top: 13%;
+            left: 17%;
+        }
+
+        #folder3 {
+            position: absolute;
+            top: 32%;
+            left: 33%;
+        }
+
+        #folder4 {
+            position: absolute;
+            top: 32%;
+            left: 17%;
+        }
+
+        #back {
+            font-size: 20px;
+        }
+
+        /* swot */
+        .container{
+            position:relative;
+            width: 100%;
+            height: 100%;
+        }
+        #S {
+            position: absolute;
+            top: 220px;
+            left: 17.5%;
+            
+        }
+
+        #W {
+            position: absolute;
+            top: 220px;
+            left: 33.2%;
+        }
+
+        #O {
+            position: absolute;
+            top: 425px;
+            left: 16.7%;
+        }
+
+        #T {
+            position: absolute;
+            top: 425px;
+            left: 34%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="line"></div>
+    <div id="one"></div>
+    <span id="bigbang">늦은 밤 비가 내려와 널 데려와 <br>
+        젖은 기억 끝에 뒤척여 나<br>
+        너 없이 잘 살 수 있다고 다짐해봐도 어쩔 수 없다고<br>
+        못하는 술도 마시고 속 타는 맘 밤새 채워봐도<br>
+        싫어 너 없는 하루는 길어<br>
+        빌어 제발 잊게 해달라고 (거짓말이야) <br>
+        너 없는 내겐 웃음이 보이지 않아<br>
+        눈물조차 고이지 않아 더는 살고 싶지 않아<br>
+        엿 같애 열받게 니 생각에 돌아버릴 것 같애<br>
+        보고 싶은데 볼 수가 없데 모두 끝났데 I'll be right there</span>
+
+    <span id="aboutme">
+        <strong>JAE YONG HWANG <br></strong>
+        1999.04.02 <br>
+        beomgolaeda@gmail.com <br>
+        <br>
+        <strong>EDUCATION <br></strong>
+        TEST <br>
+        <br>
+        <strong>SKILL <br></strong>
+        TEST <br>
+        TEST <br>
+        TEST <br>
+        TEST <br>
+        TEST <br>
+        <br>
+        <strong>CERTIFICATION <br></strong>
+        TEST <br>
+        TEST <br>
+    </span>
+
+    <p id="nextText">Next</p>
+    <div id="nextone"></div>
+
+    <div id="folder1"><img src="/img/folder-151584_1280.webp" alt="폴더사진"></div>
+    <div id="folder2"><img src="/img/folder-151584_1280.webp" alt="폴더사진"></div>
+    <div id="folder3"><img src="/img/folder-151584_1280.webp" alt="폴더사진"></div>
+    <div id="folder4"><img src="/img/folder-151584_1280.webp" alt="폴더사진"></div>
+
+    <p id="back">Back</p>
+
+    <p class="foldername"></p>
+
+    <div class="container">
+        <p id="S">Strengths</p>
+        <p id="W">Weaknesses</p>
+        <p id="O">Opportunities</p>
+        <p id="T">Threats</p>
+    </div>
+
+
+</body>
+
+</html>
