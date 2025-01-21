@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #3B7AEF;
+        }
+
+        span,
+        p {
+            color: gray;
+            font-family: 'Pretendard-Regular';
+        }
+
+        #border {
+            border: 1px solid white;
+            width: 100vw;
+            height: 85vh;
+            background-color: white;
+            position: absolute;
+            top: 70px;
+            left: 0px;
+        }
+
+        #aboutme {
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            margin-top: 15px;
+        }
+
+        #one {
+            border: 1px solid white;
+            border-radius: 50%;
+            background-color: #3B7AEF;
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 250px;
+            right: 360px;
+            opacity: 50%;
+
+        }
+
+        #name {
+            font-size: 100px;
+            position: absolute;
+            top: 50px;
+            left: 150px;
+            color: #3B7AEF;
+        }
+
+        #mylist {
+            font-size: 40px;
+            position: absolute;
+            top: 250px;
+            left: 180px;
+        }
+
+        #skill {
+            font-size: 35px;
+            position: absolute;
+            top: 410px;
+            left: 180px;
+        }
+
+        #s {
+            font-size: 30px;
+        }
+
+        #k {
+            font-size: 30px;
+        }
+
+        #g {
+            font-size: 30px;
+        }
+
+        #skill2 {
+            font-size: 40px;
+            position: absolute;
+            top: 370px;
+            left: 190px;
+            color: #3B7AEF;
+        }
+
+        #education {
+            font-size: 40px;
+            position: absolute;
+            top: 590px;
+            left: 190px;
+            color: #3B7AEF;
+        }
+
+        #edu {
+            font-size: 30px;
+            position: absolute;
+            top: 640px;
+            left: 180px;
+            color: gray;
+        }
+
+        li {
+            color: black;
+        }
+
+        .body2 {
+            background-color: #3B7AEF
+        }
+
+
+
+        #loading {
+            text-align: center;
+            padding: 20px;
+            display: none;
+        }
+
+        img{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 25px;
+            right:30px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="border"></div>
+    <p id="aboutme">ABOUT ME</p>
+
+    <div id="one"></div>
+
+    <p id="name">JAEYONG HWANG</p>
+    <ul id="mylist">
+        <li>1999. 04. 02</li>
+        <li>beomgolaeda@gmail.com</li>
+    </ul>
+    <p id="skill2"><strong>SKILL</strong></p>
+    <ul id="skill">
+        <li>Strong<span id="s"> Java, Spring, MySql</span></li>
+        <li>Knowledgeable<span id="k"> JavaScript, Node.js </span></li>
+        <li>Etc<span id="g"> Git</span></li>
+    </ul>
+    <p id="education"><strong> EDUCATION</strong></p>
+    <ul id="edu">
+        <li> 2025 상지대학교</li>
+        <li> 2018 상계고등학교</li>
+    </ul>
+<a href="http://127.0.0.1:5500/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%EC%B0%90/portfolio3.html">
+
+    <img id="shake-image" src="/img/free-icon-next-button-2883482.png" alt="next" > 
+</a>
+
+
+
+
+
+
+    <script>
+        // 이미지 요소
+        const image = document.getElementById('shake-image');
+
+        // 흔드는 함수
+        function shakeImage() {
+            image.style.transform = 'translateY(-20px)';
+            
+            // 잠시 후 다시 원위치로
+            setTimeout(() => {
+                image.style.transform = 'translateY(20px)';
+            }, 250);
+
+            // 다시 원위치로
+            setTimeout(() => {
+                image.style.transform = 'translateY(0)';
+            }, 500);
+        }
+
+        // 페이지가 로드된 후 이미지를 계속해서 흔들기
+        setInterval(shakeImage, 1000);  // 1초마다 흔들기
+    </script>
+</body>
+
+</html>
