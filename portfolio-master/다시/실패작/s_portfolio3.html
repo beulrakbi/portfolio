@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio3</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+        p, span{
+            color:white;
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+        }
+        /* 가운데 가로 라인 */
+        .linecenter{ /* 중앙 정렬을 위해서 따로 클래스 선언*/
+            display: flex; /* flex박스 선언해서 자식 요소 정렬*/
+            justify-content: center; /* 수평방향 중앙 정렬*/
+            align-items: center; /* 수직 방향 중앙정렬*/
+            height:100%; /*컨테이너 높이를 부모의 전체 높이로*/
+        }
+        #line {
+            border-bottom: 1px solid #F8FFC2;
+            width: 60%;
+            position: absolute;
+            top: 50%;
+        }
+        #back{
+            font-size:20px;
+        }
+
+        /* apt가사 부분 */
+        .aptarea{ 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height:100%; 
+        }
+        #apt{
+            font-size: 30px;
+            position: absolute;
+            top: 60%;
+        }
+
+        /* next */
+        #finish{
+            position: absolute;
+            bottom: 2px;
+            right: 3%;
+            font-size: 30px;
+        }
+
+        /*  옆에 원 */
+        #finishone {
+            width: 40px;
+            height: 40px;
+            border: 1px solid white;
+            opacity: 0.3;
+            background-color: #F8FFC2;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+
+            /* 위치 조정 */
+            position: absolute;
+            bottom: 3.7%;
+            right: 2.3%;
+        }
+
+        #imgbox1{
+            background-color: gray;
+            border:1px solid gray;
+            border-radius: 10px;
+            width: 300px;
+            height: 20vh;
+            position: absolute;
+            top: 24%;
+            left:10%
+        }
+        #imgbox2{
+            background-color: gray;
+            border:1px solid gray;
+            border-radius: 10px;
+            width: 300px;
+            height: 20vh;
+            position: absolute;
+            top: 24%;
+            left:30%
+        }
+        #imgbox3{
+            background-color: gray;
+            border:1px solid gray;
+            border-radius: 10px;
+            width: 300px;
+            height: 20vh;
+            position: absolute;
+            top: 24%;
+            left:50%
+        }
+        #imgbox4{
+            background-color: gray;
+            border:1px solid gray;
+            border-radius: 10px;
+            width: 300px;
+            height: 20vh;
+            position: absolute;
+            top: 24%;
+            left:70%
+        }
+
+        #project{
+            font-size: 60px;
+            position: absolute;
+            left: 40%;
+            top: 3%;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="linecenter">
+        <div id="line"></div>
+    </div>
+    <p id="back">Back</p>
+    <div class="aptarea">
+        <span id="apt">
+            <strong>TEST <br></strong>
+            채영이가 좋아하는
+            랜덤 게임
+            랜덤 게임
+            Game start
+            아파트, 아파트
+            아파트, 아파트
+            아파트, 아파트
+            Uh, uh-huh, uh-huh <br>
+            아파트, 아파트
+            아파트, 아파트
+            아파트, 아파트
+            Uh, uh-huh, uh-huh <br>
+            Kissy face, kissy face
+            Sent to your phone, but
+            I'm tryna kiss your lips for real (uh-huh, uh-huh) <br>
+            Red hearts, red hearts
+            That's what I'm on, yeah
+            Come give me somethin' I can feel, oh-oh-oh
+        </span>
+    </div>
+
+    <p id="finish">Finish</p>
+    <div id="finishone"></div>
+
+    <div id="imgbox1"><p>img</p></div>
+    <div id="imgbox2"><p>img</p></div>
+    <div id="imgbox3"><p>img</p></div>
+    <div id="imgbox4"><p>img</p></div>
+
+    <p id="project">PROJECT</p>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+    font-family: 'LeferiPoint-SpecialItalicA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialItalicA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+        body {
+            background-color: #3B7AEF;
+        }
+
+        span,
+        p {
+            color: gray;
+            font-family: 'LeferiPoint-SpecialItalicA';
+        }
+
+        #border {
+            border: 1px solid white;
+            width: 100vw;
+            height: 85vh;
+            background-color: white;
+            position: absolute;
+            top: 70px;
+            left: 0px;
+        }
+
+        #aboutme {
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            margin-top: 15px;
+        }
+
+        #me {
+            border: 1px solid #3B7AEF;
+            border-radius: 50%;
+            background-color: white;
+            width: 700px;
+            height: 700px;
+            position: absolute;
+            top: 260px;
+            right: 200px;
+
+        }
+
+        #name {
+            font-size: 100px;
+            position: absolute;
+            top: 50px;
+            left: 150px;
+            color: #3B7AEF;
+        }
+
+        #mylist {
+            font-size: 40px;
+            position: absolute;
+            top: 250px;
+            left: 180px;
+        }
+
+        #skill {
+            font-size: 35px;
+            position: absolute;
+            top: 410px;
+            left: 180px;
+        }
+
+        #s {
+            font-size: 30px;
+        }
+
+        #k {
+            font-size: 30px;
+        }
+
+        #g {
+            font-size: 30px;
+        }
+
+        #skill2 {
+            font-size: 40px;
+            position: absolute;
+            top: 370px;
+            left: 190px;
+            color: #3B7AEF;
+        }
+
+        #education {
+            font-size: 40px;
+            position: absolute;
+            top: 590px;
+            left: 190px;
+            color: #3B7AEF;
+        }
+
+        #edu {
+            font-size: 30px;
+            position: absolute;
+            top: 640px;
+            left: 180px;
+            color: gray;
+        }
+
+        li {
+            color: black;
+        }
+
+        .body2 {
+            background-color: #3B7AEF
+        }
+
+
+
+        #loading {
+            text-align: center;
+            padding: 20px;
+            display: none;
+        }
+
+        #shake-image{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 25px;
+            right:30px;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="border"></div>
+    <p id="aboutme">ABOUT ME</p>
+
+    <!-- <div id="one"> </div> -->
+        <img id="me" src="/다시/img/KakaoTalk_20250121_234406715.jpg" alt="me">
+
+    <p id="name">JAEYONG HWANG</p>
+    <ul id="mylist">
+        <li>1999. 04. 02</li>
+        <li>beomgolaeda@gmail.com</li>
+    </ul>
+    <p id="skill2"><strong>SKILL</strong></p>
+    <ul id="skill">
+        <li>Strong<span id="s"> Java, Spring, MySql</span></li>
+        <li>Knowledgeable<span id="k"> JavaScript, Node.js </span></li>
+        <li>Etc<span id="g"> Git</span></li>
+    </ul>
+    <p id="education"><strong> EDUCATION</strong></p>
+    <ul id="edu">
+        <li> 2025 상지대학교</li>
+        <li> 2018 상계고등학교</li>
+    </ul>
+<a href=http://127.0.0.1:5500/%EB%8B%A4%EC%8B%9C/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%EC%B0%90/portfolio3.html>
+
+    <img id="shake-image" src="/다시/img/free-icon-next-button-2883482.png" alt="next" > 
+</a>
+
+
+
+
+
+
+    <script>
+        // 이미지 요소
+        const image = document.getElementById('shake-image');
+
+        // 흔드는 함수
+        function shakeImage() {
+            image.style.transform = 'translateY(-20px)';
+            
+            // 잠시 후 다시 원위치로
+            setTimeout(() => {
+                image.style.transform = 'translateY(20px)';
+            }, 250);
+
+            // 다시 원위치로
+            setTimeout(() => {
+                image.style.transform = 'translateY(0)';
+            }, 500);
+        }
+
+        // 페이지가 로드된 후 이미지를 계속해서 흔들기
+        setInterval(shakeImage, 1000);  // 1초마다 흔들기
+    </script>
+</body>
+
+</html>
